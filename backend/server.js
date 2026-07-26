@@ -33,9 +33,6 @@ app.use(cors({
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:7000",
-  "https://main.d12l4ym665j4u1.amplifyapp.com",
-  "https://claude-connect-full-stack-mongodb-qdyjo.d12l4ym665j4u1.amplifyapp.com",
-  "https://main.dsoa1hgcxw1e5.amplifyapp.com"
 ];
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
