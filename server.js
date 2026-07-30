@@ -32,7 +32,7 @@ app.use(cors({
 
 const allowedOrigins = [
    "http://localhost:7000",
-  "https://corevias.netlify.app"
+  "https://tynvora.netlify.app"
 ];
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
