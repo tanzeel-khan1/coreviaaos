@@ -24,12 +24,12 @@ router.post('/', protect, async (req, res) => {
       <p style="color: #666; line-height: 1.6;">${body || 'A document has been shared with you via Investor OS.'}</p>
       ${file_url ? `<p><a href="${file_url}" style="background:#4f46e5;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:8px;">View / Download ${file_name || 'Document'}</a></p>` : ''}
       <hr style="border:none;border-top:1px solid #eee;margin:24px 0;" />
-      <p style="color:#999;font-size:12px;">Sent via Investor OS</p>
+      <p style="color:#999;font-size:12px;">Sent via Tynvoros</p>
     </div>
   `;
 
   await transporter.sendMail({
-    from: `"Investor OS" <${process.env.EMAIL_USER}>`,
+    from: `"Tynvoros" <${process.env.EMAIL_USER}>`,
     to,
     subject: subject || 'Document shared with you',
     html,
