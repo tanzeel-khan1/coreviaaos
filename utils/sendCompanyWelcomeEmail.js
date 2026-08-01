@@ -6,11 +6,11 @@ const sendCompanyWelcomeEmail = async ({ email, fullName, companyName }) => {
 
   await sendEmail({
     to: email,
-    subject: `Welcome to InvestorOS — ${companyName} is ready!`,
+    subject: `Welcome to Tynvoros — ${companyName} is ready!`,
     html: `
       <div style="font-family: Arial, sans-serif; background:#f6f6f6; padding:20px;">
         <div style="max-width:520px; margin:auto; background:white; padding:30px; border-radius:10px;">
-          <h2 style="color:#111; margin-bottom:10px;">Welcome to InvestorOS 🚀</h2>
+          <h2 style="color:#111; margin-bottom:10px;">Welcome to Tynvoros 🚀</h2>
           <p style="color:#555; font-size:14px; line-height:1.6;">
             Hi ${name},
           </p>
@@ -27,14 +27,14 @@ const sendCompanyWelcomeEmail = async ({ email, fullName, companyName }) => {
           </ol>
           <p style="text-align:center; margin:28px 0;">
             <a href="${appUrl}/personal" style="background:#111; color:white; padding:12px 24px; text-decoration:none; border-radius:8px; font-weight:600; display:inline-block;">
-              Open InvestorOS
+              Open Tynvoros
             </a>
           </p>
           <hr style="margin:20px 0;" />
           <p style="font-size:12px; color:#888;">
             Need help? Reply to this email or visit your dashboard settings.
           </p>
-          <p style="font-size:12px; color:#aaa;">InvestorOS Team</p>
+          <p style="font-size:12px; color:#aaa;">Tynvoros Team</p>
         </div>
       </div>
     `,

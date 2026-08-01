@@ -10,7 +10,7 @@ const sendOTPEmail = async (email, otp) => {
   });
 
   await transporter.sendMail({
-    from: `InvestorOS <${process.env.EMAIL_USER}>`,
+    from: `Tynvoros <${process.env.EMAIL_USER}>`,
     to: email,
     subject: "Verify Your Email - OTP Code",
 
@@ -43,7 +43,7 @@ const sendOTPEmail = async (email, otp) => {
           </p>
 
           <p style="font-size:12px; color:#aaa;">
-            InvestorOS Team
+            Tynvoros Team
           </p>
 
         </div>

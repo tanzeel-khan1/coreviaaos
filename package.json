@@ -1,7 +1,7 @@
 {
-  "name": "investoros-backend",
+  "name": "Tynvoros-backend",
   "version": "1.0.0",
-  "description": "InvestorOS backend API",
+  "description": "Tynvoros backend API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

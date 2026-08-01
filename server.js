@@ -31,19 +31,13 @@ app.use(cors({
 }));
 
 const allowedOrigins = [
-   "http://localhost:7000",
+  "http://localhost:7000",
   "https://tynvora.netlify.app"
 ];
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// const io = new Server(server, {
-//   cors: {
-//     origin: allowedOrigins,
-//     methods: ['GET', 'POST'],
-//     credentials: true
-//   }
-// });
+
 const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
@@ -75,7 +69,7 @@ app.post('/api/upload', protect, upload.single('file'), (req, res) => {
 
 // Test route
 app.get('/', (req, res) => {
-  res.json({ success: true, message: 'InvestorOS API is running' });
+  res.json({ success: true, message: 'Tynvoros API is running' });
 });
 
 // REST routes
